@@ -14,7 +14,7 @@ __desc__ = "DNS censorship detection test"
 
 class DNSTAsset(Asset):
     def __init__(self, file=None):
-        self = asset.__init__(self, file)
+        self = Asset.__init__(self, file)
 
 class DNST(Test):
     def lookup(self, hostname, ns):
