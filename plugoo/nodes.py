@@ -7,12 +7,11 @@
     This contains all the code related to Nodes
     both network and code execution.
 
-    :copyright: (c) 2012 by Arturo Filastò.
+    :copyright: (c) 2012 by Arturo Filastò, Isis Lovecruft.
     :license: see LICENSE for more details.
 
 """
 
-import cmd
 import os
 from binascii import hexlify
 
