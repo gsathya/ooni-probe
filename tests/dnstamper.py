@@ -7,10 +7,20 @@ import os
 import plugoo
 from plugoo.assets import Asset
 from plugoo.tests import Test
-
+from __future__ import with_statement
 
 __plugoo__ = "DNST"
 __desc__ = "DNS censorship detection test"
+
+class Top1MAsset(Asset):
+    def __init__(self, file=None):
+        self = Asset.__init__(self, file)
+    
+    def next_asset(self):
+        with self.fh as asset:
+            lines = asset.readlines()
+            for line in lines:
+                yield line.split(',')[1]
 
 class DNSTAsset(Asset):
     def __init__(self, file=None):
