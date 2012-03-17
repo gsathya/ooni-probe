@@ -7,7 +7,6 @@ import os
 import plugoo
 from plugoo.assets import Asset
 from plugoo.tests import Test
-from __future__ import with_statement
 
 __plugoo__ = "DNST"
 __desc__ = "DNS censorship detection test"
@@ -16,11 +15,9 @@ class Top1MAsset(Asset):
     def __init__(self, file=None):
         self = Asset.__init__(self, file)
     
-    def next_asset(self):
-        with self.fh as asset:
-            lines = asset.readlines()
-            for line in lines:
-                yield line.split(',')[1]
+    def parse_line(self, line):
+        self = Asset.parse_line(self, line)
+        return line.split(',')[1].replace('\n','')
 
 class DNSTAsset(Asset):
     def __init__(self, file=None):
@@ -53,10 +50,10 @@ class DNST(Test):
         control = self.lookup(address, config.tests.dns_control_server)
 
         if len(set(exp) & set(control)) > 0:
-            print "%s : no tampering on %s" % (address, ns)
+            print "Address %s has not tampered with on DNS server %s\n" % (address, ns)
             return (address, ns, False)
         else:
-            print "%s : possible tampering on %s (%s, %s)" % (address, ns, exp, control)
+            print "Address %s has possibly been tampered on %s:\nDNS resolution through %s yeilds:\n%s\nAlthough the control group DNS servers resolve to:\n%s\n" % (address, ns, ns, exp, control)
             return (address, ns, exp, control, True)
 
 def run(ooni):
@@ -65,7 +62,7 @@ def run(ooni):
     config = ooni.config
     urls = []
 
-    dns_experiment = DNSTAsset(os.path.join(config.main.assetdir, \
+    dns_experiment = Top1MAsset(os.path.join(config.main.assetdir, \
                                             config.tests.dns_experiment))
     dns_experiment_dns = DNSTAsset(os.path.join(config.main.assetdir, \
                                                 config.tests.dns_experiment_dns))
