@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+    <title>T-Mobile Web Guard censorship list</title>
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="../../stylesheets/foundation.css">
+	<link rel="stylesheet" href="../../stylesheets/app.css">
+
+    <!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- container -->
+	<div class="container">
+
+		<div class="row">
+			<div class="twelve columns">
+				<a href="/"><h2>OONI</h2></a>
+				<p>Open Observatory of Network Interference</p>
+				<hr />
+			</div>
+		</div>
+
+		<div class="row">
+
+            <div class="eight columns">
+                <h3>T-Mobile Web Guard censorship list</h3>
+                <div class="row">
+                    <div class="twelve columns">
+                        <p>T-Mobile offers a "feature" to restrict access to certain
+                        kinds of content. This is called Web Guard. Supposedly Web Guard
+                        is supposed to inhibit access to content that falls under the
+                        following categories: Alcohol, Mature Content, Violence,
+                        Drugs, Pornography,  Weapons, Gambling, Suicide, Guns, Hate,
+                        Tobacco, Ammunition.
+                        </p>
+                        <p>
+                        By developing an OONI-probe test we were able to extract part of
+                        the list of censored content and discovered that sites that do
+                        not fall under these categories were also censored.
+                        This feature is enabled by default on all prepaid accounts and
+                        although it can be disabled by customers who wish to do so
+                        (if over 18 years of age), it is not clearly stated in the
+                        error page how to do so. This means that T-Mobile customers may
+                        be drawn into the Filternet without knowing how to get out.<br />
+                        </p>
+                        <h5>How is the censorship performed?</h5>
+                        <p>
+                        The technique being used by T-Mobile to restrict access to certain content
+                        involves deploying a transprent HTTP proxy. This proxy intercepts every HTTP
+                        packet going through the network and checks it's Host header field to see if
+                        it on the censored list. If the site is to be blocked it injects a fake response
+                        warning the user of the block. What this means is that the block is only effective
+                        against unencrypted HTTP traffic, but does not work for encrypted HTTPs traffic.
+                        </p>
+                        <h5>Some sites should not be censored</h5>
+                        <p>
+                        While most of the censored sites are legitimately censored, there are certain
+                        ones that do not fall under the categories of the block.
+                        Here is a list of sites that we found to be censored, but that we don't believe
+                        belong to any of the following categories Alcohol, Mature Content, Violence,
+                        Drugs, Pornography, Weapons, Gambling, Suicide, Guns, Hate, Tobacco, Ammunition.
+                        <ul>
+                            <li>
+                            http://torproject.org<br />
+                            The Tor Project is dedicated to proving anonymous secure communication. The web
+                            site contains information on this piece of software and how to use it. It's curious
+                            to note that although http://torproject.org/ may be blocked httpS://torproject.org is
+                            still accessible and that is the link found on all sites.
+                            </li>
+                            <li>http://logicalmedia.com/
+                            </li>
+                            <li>http://www.newgrounds.com/
+                            </li>
+                            <li>hackforums.net<br />
+                            Is a hacking forum.
+                            </li>
+                            <li>http://guns.ru/
+                            </li>
+                            <li>http://www.nulledscripts.it/
+                            </li>
+                            <li>http://nullrefer.com/
+                            </li>
+                            <li>http://wwwwwwwwwww.net/
+                            </li>
+                            <li>anonym.to
+                            </li>
+                            <li>http://www.nulled.cc/
+                            </li>
+                            <li>http://www.ir-tci.org/
+                            </li>
+^^^ Arab written website (investigate)
+                            </li>
+                            <li>http://matomeru2ch.com/
+                            </li>
+                            <li>217.175.53.72
+                            </li>
+^^ Italian AAMS block site
+                            </li>
+                            <li>http://wiki-live.com/
+                            </li>
+                            <li>http://sougouwiki.com/
+                            </li>
+                            <li>http://www.wikifeet.com/
+                            </li>
+                            <li>http://web.archive.org/
+                            </li>
+                            <li>http://www.wjunction.com/
+                            </li>
+
+                        </ul>
+                        These other sites are sort of border line. Under some loose interpretation
+                        of the above categories may fit into the censorship.
+                        <ul>
+                            <li>http://www.victoriassecret.com/
+                            </li>
+                            <li>alt.com</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Details</h3>
+				<dl class="tabs">
+					<dd><a href="#simple1" class="active">Summary</a></dd>
+					<dd><a href="#simple2">Downloads</a></dd>
+				</dl>
+
+				<ul class="tabs-content">
+					<li class="active" id="simple1Tab">
+                        <ul>
+                        <li><em>Method:</em> Transparent HTTP proxy</li>
+                        <li><em>OONI Test:</em> HTTP Host</li>
+                        <li><em>Country:</em> United States</li>
+                        <li><em>Provider:</em> T-Mobile</li>
+                        <li><em>Product name:</em> Web Guard</li>
+                        <li><em>Product website:</em> <a href="http://support.t-mobile.com/docs/DOC-2144">http://support.t-mobile.com/docs/DOC-2144</a></li>
+                        </ul>
+                    </li>
+					<li id="simple2Tab">
+						<p><a href="#" class="nice radius blue button">Raw scan results</a></p>
+						<p><a href="#" class="nice radius blue button">Categorised censored site list</a></p>
+                    </li>
+				</ul>
+
+            </div>
+            <div class="four columns">
+				<h4>Releases</h4>
+                <ul>
+                    <li><a href="/releases/19-03-2012-T-Mobile-WebGuard">March 2012 - T-Mobile Web Guard host based censorship</a></li>
+                </ul>
+				<h4>Developers, Developers, Developers, Developers!</h4>
+				<ul class="disc">
+					<li><a href="https://gitweb.torproject.org/">Git Repository</a><br />Where to get the code.</li>
+					<li><a href="/docs">Developer documentation</a><br />Resources on how to write OONI-probe plugoos and how to hack on it.</li>
+				</ul>
+			</div>
+            </div>
+		</div>
+
+    <footer class="row">
+        <hr>
+        <section class="ten columns centered">
+            <p>(c) 2012 - Arturo Filasto'</p>
+        </section>
+    </footer>
+	</div>
+	<!-- container -->
+
+
+
+
+	<!-- Included JS Files -->
+	<script src="../../javascripts/jquery.min.js"></script>
+	<script src="../../javascripts/modernizr.foundation.js"></script>
+	<script src="../../javascripts/foundation.js"></script>
+	<script src="../../javascripts/app.js"></script>
+</body>
+</html>
