@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title> - OONI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/media/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/media/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/media/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/media/ico/apple-touch-icon-57-precomposed.png">
+
+    
+
+    <link href="/blog/atom.xml" rel="alternate" title="OONI" type="application/atom+xml"/>
+    
+    
+
+    <link rel="stylesheet" href="/media/css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/media/css/bootstrap-responsive.css" type="text/css" media="screen" charset="utf-8">
+    
+
+
+    
+
+    <!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/media/js/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="topbar">
+  <div class="header">
+    <div class="container">
+      <!--
+      <a class="brand" href="/" title="OONI - Open Observatory of Network Interference">
+        <img alt="OONI" height="28" src="/images/ooni-logo-111x28.png" width="111">
+      </a>
+      -->
+      <h1 class="site-title">
+        <a href="/index.html">
+            OONI
+        </a>: Open Observatory of Network Interference
+      </h1>
+
+    
+    
+
+
+<ul class="nav nav-pills">
+  <li><a href="/index.html">Home</a></li>
+  
+    <li>
+    <a href="/about/about.html">About</a>
+    </li>
+  
+    <li class="active" >
+    <a href="/releases/index.html">Releases</a>
+    </li>
+  
+</ul>
+
+
+    
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+<!-- BEGIN content-header -->
+<!-- END content-header -->
+
+
+
+
+<!-- BEGIN content-Body -->
+<div class="container">
+<div class="row">
+
+<div class="span4">
+  <!-- BEGIN SECOND -->
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#details" data-toggle="tab">Details</a></li>
+    <li><a href="#data" data-toggle="tab">Data</a></li>
+    <li><a href="#help" data-toggle="tab">Help Scan!</a></li>
+  </ul>
+
+  <div id="myTabContent" class="tab-content">
+  <!-- BEGIN tab-content -->
+    <div class="tab-pane active" id="details">
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <td>Method</td>
+          <td>Transparent HTTP proxy</td>
+        </tr>
+        <tr>
+          <td>OONI Test</td>
+          <td>HTTP HostOONI Test</td>
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td>United States</td>
+        </tr>
+        <tr>
+          <td>Provider</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Product name</td>
+          <td>Web Guard</td>
+        </tr>
+        <tr>
+          <td>Product website</td>
+          <td>http://support.t-mobile.com/docs/DOC-2144</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="tab-pane" id="data">
+    <ul>
+      <dl class="dl-horizontal">
+        
+        <dt>Full scan result</dt>
+        <dd><a href="#1" class="btn btn-small">Download</a>
+</dd>
+        
+        <dt>List of censored sites</dt>
+        <dd><a href="#2" class="btn btn-small">Download</a>
+</dd>
+        
+        <dt>Categories of censored sites</dt>
+        <dd><a href="#3" class="btn btn-small">Download</a>
+</dd>
+        
+
+        <!-- dt>List of censored sites</dt>
+            <dd><a href="#" class="btn btn-small">Download</a>
+        </dd>
+        <dt>Categories of censored sites</dt>
+            <dd><a href="#" class="btn btn-small">Download</a>
+        </dd-->
+    </div>
+
+    <div class="tab-pane" id="help">
+      <h4>Comming soon...</h4>
+    </div>
+  <!-- END tab-content -->
+  </div>
+
+
+  <!-- END SECOND -->
+
+</div>
+
+<div class="span8">
+  <div id="content-header">
+      <h1>T-Mobile USA Web Guard</h1>
+      <span class="post-date">Wed 21 Mar 2012</span>
+  </div>
+
+  <div id="post-content">
+      
+
+      <!-- Hyde::Article::Begin -->
+
+<p>T-Mobile USA offers a "feature" to restrict access to certain
+kinds of content. This is called Web Guard. Supposedly Web Guard
+is supposed to inhibit access to content that falls under the
+following categories: Alcohol, Mature Content, Violence,
+Drugs, Pornography,  Weapons, Gambling, Suicide, Guns, Hate,
+Tobacco,&nbsp;Ammunition.
+</p>
+
+<p>
+By developing an OONI-probe test we were able to extract part of
+the list of censored content and discovered that sites that do
+not fall under these categories were also censored.
+This feature is enabled by default on all prepaid accounts and
+although it can be disabled by customers who wish to do so
+(if over 18 years of age), it is not clearly stated in the
+error page how to do so. This means that T-Mobile USA customers may
+be drawn into the Filternet without knowing how to get out.<br />
+</p>
+
+<h5>How is the censorship&nbsp;performed?</h5>
+
+<p>
+The technique being used by T-Mobile USA to restrict access to certain content
+involves deploying a transprent HTTP proxy. This proxy intercepts every HTTP
+packet going through the network and checks it's Host header field to see if
+it on the censored list. If the site is to be blocked it injects a fake response
+warning the user of the block. What this means is that the block is only effective
+against unencrypted HTTP traffic, but does not work for encrypted HTTPs&nbsp;traffic.
+</p>
+
+<h5>Some sites should not be&nbsp;censored</h5>
+
+<p>
+While most of the censored sites are legitimately censored, there are certain
+ones that do not fall under the categories of the block.
+Here is a list of sites that we found to be censored, but that we don't believe
+belong to any of the following categories Alcohol, Mature Content, Violence,
+Drugs, Pornography, Weapons, Gambling, Suicide, Guns, Hate, Tobacco, Ammunition.
+<ul>
+<li>
+http://pitsirikos.net/
+Satirical site of a famous greek blogger<br />
+</li>
+<li>
+http://whatreallyhappened.com/<br />
+Conspiracy theory website dealing with&nbsp;9/11
+</li>
+<li>http://www.chartsinfrance.net/<br/>
+French pop music hit&nbsp;list
+</li>
+<li>
+http://web.archive.org/
+The internet archive. The library of the&nbsp;internet.</li>
+<li>http://www.programme.tv/<br/>French broadcast TV&nbsp;guide</li>
+<li>http://www.cosmopolitan.com/<br />Cosmopolitan is an international magazine for&nbsp;women.</li>
+<li>zone-h.org<br />Zone-H is an archive of defaced&nbsp;websites</li>
+<li>
+http://torproject.org<br />
+The Tor Project is dedicated to proving anonymous secure communication. The web
+site contains information on this piece of software and how to use it. It's curious
+to note that although http://torproject.org/ may be blocked httpS://torproject.org is
+still accessible and that is the link found on all&nbsp;sites.
+</li>
+<li>http://www.sportscn.com/<br />Chinese sports news&nbsp;website</li>
+<li>217.175.53.72<br />Italian censorship site being blocked by US&nbsp;censorship</li>
+</li>
+
+<li>http://logicalmedia.com/
+</li>
+<li>http://www.newgrounds.com/
+</li>
+<li>hackforums.net<br />
+Is a hacking&nbsp;forum.
+</li>
+<li>http://www.nulledscripts.it/
+</li>
+<li>http://nullrefer.com/
+</li>
+<li>http://wwwwwwwwwww.net/
+</li>
+<li>anonym.to
+</li>
+<li>http://www.nulled.cc/
+</li>
+<li>http://www.ir-tci.org/
+</li>
+<li>http://matomeru2ch.com/
+</li>
+<li>http://wiki-live.com/
+</li>
+<li>http://www.wjunction.com/
+</li>
+
+</ul>
+These other sites are sort of border line. Under some loose interpretation
+of the above categories may fit into the censorship.
+<ul>
+<li>http://www.victoriassecret.com/
+</li>
+</ul>
+When I asked T-Mobile US about the matter this is what came out with the
+following:
+
+<pre class="prettyprint linenums">
+ Arturo Filastò @hellais
+@TMobileHelp Under what category does http://torproject.org fall under? I don't see any reason for it being blocked. @mikavienna @ioerror
+
+ T-Mobile USA @TMobileHelp
+Hi there. Here's more info about webguard. http://ow.ly/9JbxO Please let us know if we can help. ^CG
+
+ Arturo Filastò @hellais
+@TMobileHelp Why is web guard blocking http://torproject.org? It does not appear to belong to the filtered categories.
+
+ T-Mobile USA @TMobileHelp
+@hellais @MiKaVienna @ioerror http://torproject.org is not blocked. There must be a webguard on your line. Please contact us to resolve. ^CG
+
+ Arturo Filastò  @hellais
+Wonder what keywords it picket up in @torproject that fit in these categories: http://support.t-mobile.com/docs/DOC-2144#What_categories_will_be_completely_restricted_with_the_Web_Guard_feature
+
+ T-Mobile USA  @TMobileHelp
+My guess would be system picked up keywords there. Let us know if we can assist in turning webguard off. ^CG
+
+ Arturo Filastò  @hellais
+Also, doesn't t-mobile buy the list of censored sites from a third party? Or does it compile it itself?
+
+ T-Mobile USA @TMobileHelp
+My guess would be system picked up keywords there. Let us know if we can assist in turning webguard off. ^CG
+
+ Arturo Filastò @hellais
+My questions are: why is Web Guard enabled on my account and why sites such as http://torproject.org are filtered.
+
+ T-Mobile USA @TMobileHelp
+I don't have enough information to speculate further about the details. I CAN help you turn off webguard? ^CG
+
+ Arturo Filastò @hellais
+@TMobileHelp what leads TMobile to believe that a customer is interested in censorship? Is Web Guard activated on all prepaid accounts?
+
+ T-Mobile USA @TMobileHelp
+Must be because when your account was set up, we thought you wanted it. If you don't, please contact us: http://ow.ly/9JllQ ^CG
+</pre>
+So T-Mobile is basically interfering into what should be taught by
+parents to their children. Since most of prepaid customers are
+under 18 they reserve the right to decide what is right and wrong
+for them, even bypassing their parents.<br />
+If I were a parent I would be mad that T-Mobile US chooses for my
+what my child should watch and should&nbsp;not.
+</p>
+
+<p>
+And what about the sites that they don't block? Are those deamed
+for some reason more acceptable? Is FILL_ME_IN_WITH_UNBLOCKED_SCANADLOUS_SITE
+then right to be shown to my&nbsp;children?
+</p>
+
+<!-- Hyde::Article::End -->
+
+      
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+<!-- END content-Body -->
+
+
+
+    <div class="container">
+<footer class="row">
+    <hr>
+    <section class="ten columns centered">
+        <p>(c) 2012 - Arturo Filasto'</p>
+    </section>
+</footer>
+</div>
+
+
+<!-- Included JS Files -->
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script src="/media/js/jquery.js"></script>
+<script src="/media/js/google-code-prettify/prettify.js"></script>
+<script src="/media/js/bootstrap-transition.js"></script>
+<script src="/media/js/bootstrap-alert.js"></script>
+<script src="/media/js/bootstrap-modal.js"></script>
+
+<script src="/media/js/bootstrap-dropdown.js"></script>
+<script src="/media/js/bootstrap-scrollspy.js"></script>
+<script src="/media/js/bootstrap-tab.js"></script>
+<script src="/media/js/bootstrap-tooltip.js"></script>
+<script src="/media/js/bootstrap-popover.js"></script>
+<script src="/media/js/bootstrap-button.js"></script>
+<script src="/media/js/bootstrap-collapse.js"></script>
+<script src="/media/js/bootstrap-carousel.js"></script>
+<script src="/media/js/bootstrap-typeahead.js"></script>
+
+<script>
+
+    $(function() {
+      $('.tabs a:last').tab('show')
+    })
+</script>
+
+
+</body>
+</html>
+

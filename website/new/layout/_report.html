@@ -1,0 +1,120 @@
+{% extends "skeleton/_body.html" %}
+
+
+{% block content_header %}
+<!-- BEGIN content-header -->
+<!-- END content-header -->
+{% endblock %}
+
+{% block content_body %}
+
+<!-- BEGIN content-Body -->
+<div class="container">
+<div class="row">
+
+<div class="span4">
+  <!-- BEGIN SECOND -->
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#details" data-toggle="tab">Details</a></li>
+    <li><a href="#data" data-toggle="tab">Data</a></li>
+    <li><a href="#help" data-toggle="tab">Help Scan!</a></li>
+  </ul>
+
+  <div id="myTabContent" class="tab-content">
+  <!-- BEGIN tab-content -->
+    <div class="tab-pane active" id="details">
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <td>Method</td>
+          <td>{{ page.censorship_method }}</td>
+        </tr>
+        <tr>
+          <td>OONI Test</td>
+          <td>{{ page.ooni_test }}OONI Test</td>
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td>{{ page.country }}</td>
+        </tr>
+        <tr>
+          <td>Provider</td>
+          <td>{{ page.provider }}</td>
+        </tr>
+        <tr>
+          <td>Product name</td>
+          <td>{{ page.product }}</td>
+        </tr>
+        <tr>
+          <td>Product website</td>
+          <td>{{ page.product_website }}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="tab-pane" id="data">
+    <ul>
+      <dl class="dl-horizontal">
+        {% for name, address in page.downloads %}
+        <dt>{{name}}</dt>
+        <dd><a href="{{address}}" class="btn btn-small">Download</a>
+</dd>
+        {% endfor %}
+
+        <!-- dt>List of censored sites</dt>
+            <dd><a href="#" class="btn btn-small">Download</a>
+        </dd>
+        <dt>Categories of censored sites</dt>
+            <dd><a href="#" class="btn btn-small">Download</a>
+        </dd-->
+    </div>
+
+    <div class="tab-pane" id="help">
+      <h4>Comming soon...</h4>
+    </div>
+  <!-- END tab-content -->
+  </div>
+
+
+  <!-- END SECOND -->
+
+</div>
+
+<div class="span8">
+  <div id="content-header">
+      <h1>{{ page.title }}</h1>
+      <span class="post-date">{{ page.created|date:"D d M Y"}}</span>
+  </div>
+
+  <div id="post-content">
+      {% filter typogrify %}
+
+      {% markdown %}
+
+      {% block article %}
+      {% endblock %}
+
+      {% endmarkdown %}
+
+      {% endfilter %}
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+<!-- END content-Body -->
+{% endblock %}
+
+
+{% block context_nav %}
+{% include "skeleton/_context_nav.html" %}
+{% endblock %}
+
+

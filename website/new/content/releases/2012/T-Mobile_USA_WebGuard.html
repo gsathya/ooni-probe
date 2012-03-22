@@ -1,0 +1,174 @@
+{% extends "_report.html" %}
+
+{%load webdesign %}
+
+{%hyde
+    title: T-Mobile USA Web Guard
+    ooni_test: HTTP Host
+    country: United States
+    product: Web Guard
+    product_website: http://support.t-mobile.com/docs/DOC-2144
+    censorship_method: Transparent HTTP proxy
+    created: 2012-03-21 02:00:00
+    downloads:
+        - ['Full scan result', '#1']
+        - ['List of censored sites', '#2']
+        - ['Categories of censored sites', '#3']
+%}
+
+{% block article %}
+
+{%article%}
+<p>T-Mobile USA offers a "feature" to restrict access to certain
+kinds of content. This is called Web Guard. Supposedly Web Guard
+is supposed to inhibit access to content that falls under the
+following categories: Alcohol, Mature Content, Violence,
+Drugs, Pornography,  Weapons, Gambling, Suicide, Guns, Hate,
+Tobacco, Ammunition.
+</p>
+<p>
+By developing an OONI-probe test we were able to extract part of
+the list of censored content and discovered that sites that do
+not fall under these categories were also censored.
+This feature is enabled by default on all prepaid accounts and
+although it can be disabled by customers who wish to do so
+(if over 18 years of age), it is not clearly stated in the
+error page how to do so. This means that T-Mobile USA customers may
+be drawn into the Filternet without knowing how to get out.<br />
+</p>
+<h5>How is the censorship performed?</h5>
+<p>
+The technique being used by T-Mobile USA to restrict access to certain content
+involves deploying a transprent HTTP proxy. This proxy intercepts every HTTP
+packet going through the network and checks it's Host header field to see if
+it on the censored list. If the site is to be blocked it injects a fake response
+warning the user of the block. What this means is that the block is only effective
+against unencrypted HTTP traffic, but does not work for encrypted HTTPs traffic.
+</p>
+<h5>Some sites should not be censored</h5>
+<p>
+While most of the censored sites are legitimately censored, there are certain
+ones that do not fall under the categories of the block.
+Here is a list of sites that we found to be censored, but that we don't believe
+belong to any of the following categories Alcohol, Mature Content, Violence,
+Drugs, Pornography, Weapons, Gambling, Suicide, Guns, Hate, Tobacco, Ammunition.
+<ul>
+<li>
+http://pitsirikos.net/
+Satirical site of a famous greek blogger<br />
+</li>
+<li>
+http://whatreallyhappened.com/<br />
+Conspiracy theory website dealing with 9/11
+</li>
+<li>http://www.chartsinfrance.net/<br/>
+French pop music hit list
+</li>
+<li>
+http://web.archive.org/
+The internet archive. The library of the internet.</li>
+<li>http://www.programme.tv/<br/>French broadcast TV guide</li>
+<li>http://www.cosmopolitan.com/<br />Cosmopolitan is an international magazine for women.</li>
+<li>zone-h.org<br />Zone-H is an archive of defaced websites</li>
+<li>
+http://torproject.org<br />
+The Tor Project is dedicated to proving anonymous secure communication. The web
+site contains information on this piece of software and how to use it. It's curious
+to note that although http://torproject.org/ may be blocked httpS://torproject.org is
+still accessible and that is the link found on all sites.
+</li>
+<li>http://www.sportscn.com/<br />Chinese sports news website</li>
+<li>217.175.53.72<br />Italian censorship site being blocked by US censorship</li>
+</li>
+
+<li>http://logicalmedia.com/
+</li>
+<li>http://www.newgrounds.com/
+</li>
+<li>hackforums.net<br />
+Is a hacking forum.
+</li>
+<li>http://www.nulledscripts.it/
+</li>
+<li>http://nullrefer.com/
+</li>
+<li>http://wwwwwwwwwww.net/
+</li>
+<li>anonym.to
+</li>
+<li>http://www.nulled.cc/
+</li>
+<li>http://www.ir-tci.org/
+</li>
+<li>http://matomeru2ch.com/
+</li>
+<li>http://wiki-live.com/
+</li>
+<li>http://www.wjunction.com/
+</li>
+
+</ul>
+These other sites are sort of border line. Under some loose interpretation
+of the above categories may fit into the censorship.
+<ul>
+<li>http://www.victoriassecret.com/
+</li>
+</ul>
+When I asked T-Mobile US about the matter this is what came out with the
+following:
+
+<pre class="prettyprint linenums">
+ Arturo Filastò @hellais
+@TMobileHelp Under what category does http://torproject.org fall under? I don't see any reason for it being blocked. @mikavienna @ioerror
+
+ T-Mobile USA @TMobileHelp
+Hi there. Here's more info about webguard. http://ow.ly/9JbxO Please let us know if we can help. ^CG
+
+ Arturo Filastò @hellais
+@TMobileHelp Why is web guard blocking http://torproject.org? It does not appear to belong to the filtered categories.
+
+ T-Mobile USA @TMobileHelp
+@hellais @MiKaVienna @ioerror http://torproject.org is not blocked. There must be a webguard on your line. Please contact us to resolve. ^CG
+
+ Arturo Filastò  @hellais
+Wonder what keywords it picket up in @torproject that fit in these categories: http://support.t-mobile.com/docs/DOC-2144#What_categories_will_be_completely_restricted_with_the_Web_Guard_feature
+
+ T-Mobile USA  @TMobileHelp
+My guess would be system picked up keywords there. Let us know if we can assist in turning webguard off. ^CG
+
+ Arturo Filastò  @hellais
+Also, doesn't t-mobile buy the list of censored sites from a third party? Or does it compile it itself?
+
+ T-Mobile USA @TMobileHelp
+My guess would be system picked up keywords there. Let us know if we can assist in turning webguard off. ^CG
+
+ Arturo Filastò @hellais
+My questions are: why is Web Guard enabled on my account and why sites such as http://torproject.org are filtered.
+
+ T-Mobile USA @TMobileHelp
+I don't have enough information to speculate further about the details. I CAN help you turn off webguard? ^CG
+
+ Arturo Filastò @hellais
+@TMobileHelp what leads TMobile to believe that a customer is interested in censorship? Is Web Guard activated on all prepaid accounts?
+
+ T-Mobile USA @TMobileHelp
+Must be because when your account was set up, we thought you wanted it. If you don't, please contact us: http://ow.ly/9JllQ ^CG
+</pre>
+So T-Mobile is basically interfering into what should be taught by
+parents to their children. Since most of prepaid customers are
+under 18 they reserve the right to decide what is right and wrong
+for them, even bypassing their parents.<br />
+If I were a parent I would be mad that T-Mobile US chooses for my
+what my child should watch and should not.
+</p>
+<p>
+And what about the sites that they don't block? Are those deamed
+for some reason more acceptable? Is FILL_ME_IN_WITH_UNBLOCKED_SCANADLOUS_SITE
+then right to be shown to my children?
+</p>
+
+
+
+{%endarticle%}
+
+{% endblock %}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>OONI releases</title><link href="http://www.ooni.nu/releases/atom.xml" rel="self"/><link href="http://www.ooni.nu"/><updated>2012-03-22T01:52:11Z</updated><id>http://www.ooni.nu</id><entry><title>T-Mobile USA Web Guard</title><author><name>Arturo Filasto&#39;</name></author><link href="http://www.ooni.nu/releases/2012/T-Mobile_USA_WebGuard.html"/><updated>2012-03-21T02:00:00Z</updated><published>2012-03-21T02:00:00Z</published><id>http://www.ooni.nu/releases/2012/T-Mobile_USA_WebGuard.html</id><content type="html">
+       
+
+&lt;p&gt;T-Mobile USA offers a &quot;feature&quot; to restrict access to certain
+kinds of content. This is called Web Guard. Supposedly Web Guard
+is supposed to inhibit access to content that falls under the
+following categories: Alcohol, Mature Content, Violence,
+Drugs, Pornography,  Weapons, Gambling, Suicide, Guns, Hate,
+Tobacco,&amp;nbsp;Ammunition.
+&lt;/p&gt;
+
+&lt;p&gt;
+By developing an OONI-probe test we were able to extract part of
+the list of censored content and discovered that sites that do
+not fall under these categories were also censored.
+This feature is enabled by default on all prepaid accounts and
+although it can be disabled by customers who wish to do so
+(if over 18 years of age), it is not clearly stated in the
+error page how to do so. This means that T-Mobile USA customers may
+be drawn into the Filternet without knowing how to get out.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;h5&gt;How is the censorship&amp;nbsp;performed?&lt;/h5&gt;
+
+&lt;p&gt;
+The technique being used by T-Mobile USA to restrict access to certain content
+involves deploying a transprent HTTP proxy. This proxy intercepts every HTTP
+packet going through the network and checks it&#39;s Host header field to see if
+it on the censored list. If the site is to be blocked it injects a fake response
+warning the user of the block. What this means is that the block is only effective
+against unencrypted HTTP traffic, but does not work for encrypted HTTPs&amp;nbsp;traffic.
+&lt;/p&gt;
+
+&lt;h5&gt;Some sites should not be&amp;nbsp;censored&lt;/h5&gt;
+
+&lt;p&gt;
+While most of the censored sites are legitimately censored, there are certain
+ones that do not fall under the categories of the block.
+Here is a list of sites that we found to be censored, but that we don&#39;t believe
+belong to any of the following categories Alcohol, Mature Content, Violence,
+Drugs, Pornography, Weapons, Gambling, Suicide, Guns, Hate, Tobacco, Ammunition.
+&lt;ul&gt;
+&lt;li&gt;
+http://pitsirikos.net/
+Satirical site of a famous greek blogger&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;
+http://whatreallyhappened.com/&lt;br /&gt;
+Conspiracy theory website dealing with&amp;nbsp;9/11
+&lt;/li&gt;
+&lt;li&gt;http://www.chartsinfrance.net/&lt;br/&gt;
+French pop music hit&amp;nbsp;list
+&lt;/li&gt;
+&lt;li&gt;
+http://web.archive.org/
+The internet archive. The library of the&amp;nbsp;internet.&lt;/li&gt;
+&lt;li&gt;http://www.programme.tv/&lt;br/&gt;French broadcast TV&amp;nbsp;guide&lt;/li&gt;
+&lt;li&gt;http://www.cosmopolitan.com/&lt;br /&gt;Cosmopolitan is an international magazine for&amp;nbsp;women.&lt;/li&gt;
+&lt;li&gt;zone-h.org&lt;br /&gt;Zone-H is an archive of defaced&amp;nbsp;websites&lt;/li&gt;
+&lt;li&gt;
+http://torproject.org&lt;br /&gt;
+The Tor Project is dedicated to proving anonymous secure communication. The web
+site contains information on this piece of software and how to use it. It&#39;s curious
+to note that although http://torproject.org/ may be blocked httpS://torproject.org is
+still accessible and that is the link found on all&amp;nbsp;sites.
+&lt;/li&gt;
+&lt;li&gt;http://www.sportscn.com/&lt;br /&gt;Chinese sports news&amp;nbsp;website&lt;/li&gt;
+&lt;li&gt;217.175.53.72&lt;br /&gt;Italian censorship site being blocked by US&amp;nbsp;censorship&lt;/li&gt;
+&lt;/li&gt;
+
+&lt;li&gt;http://logicalmedia.com/
+&lt;/li&gt;
+&lt;li&gt;http://www.newgrounds.com/
+&lt;/li&gt;
+&lt;li&gt;hackforums.net&lt;br /&gt;
+Is a hacking&amp;nbsp;forum.
+&lt;/li&gt;
+&lt;li&gt;http://www.nulledscripts.it/
+&lt;/li&gt;
+&lt;li&gt;http://nullrefer.com/
+&lt;/li&gt;
+&lt;li&gt;http://wwwwwwwwwww.net/
+&lt;/li&gt;
+&lt;li&gt;anonym.to
+&lt;/li&gt;
+&lt;li&gt;http://www.nulled.cc/
+&lt;/li&gt;
+&lt;li&gt;http://www.ir-tci.org/
+&lt;/li&gt;
+&lt;li&gt;http://matomeru2ch.com/
+&lt;/li&gt;
+&lt;li&gt;http://wiki-live.com/
+&lt;/li&gt;
+&lt;li&gt;http://www.wjunction.com/
+&lt;/li&gt;
+
+&lt;/ul&gt;
+These other sites are sort of border line. Under some loose interpretation
+of the above categories may fit into the censorship.
+&lt;ul&gt;
+&lt;li&gt;http://www.victoriassecret.com/
+&lt;/li&gt;
+&lt;/ul&gt;
+When I asked T-Mobile US about the matter this is what came out with the
+following:
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+ Arturo Filastò @hellais
+@TMobileHelp Under what category does http://torproject.org fall under? I don&#39;t see any reason for it being blocked. @mikavienna @ioerror
+
+ T-Mobile USA @TMobileHelp
+Hi there. Here&#39;s more info about webguard. http://ow.ly/9JbxO Please let us know if we can help. ^CG
+
+ Arturo Filastò @hellais
+@TMobileHelp Why is web guard blocking http://torproject.org? It does not appear to belong to the filtered categories.
+
+ T-Mobile USA @TMobileHelp
+@hellais @MiKaVienna @ioerror http://torproject.org is not blocked. There must be a webguard on your line. Please contact us to resolve. ^CG
+
+ Arturo Filastò  @hellais
+Wonder what keywords it picket up in @torproject that fit in these categories: http://support.t-mobile.com/docs/DOC-2144#What_categories_will_be_completely_restricted_with_the_Web_Guard_feature
+
+ T-Mobile USA  @TMobileHelp
+My guess would be system picked up keywords there. Let us know if we can assist in turning webguard off. ^CG
+
+ Arturo Filastò  @hellais
+Also, doesn&#39;t t-mobile buy the list of censored sites from a third party? Or does it compile it itself?
+
+ T-Mobile USA @TMobileHelp
+My guess would be system picked up keywords there. Let us know if we can assist in turning webguard off. ^CG
+
+ Arturo Filastò @hellais
+My questions are: why is Web Guard enabled on my account and why sites such as http://torproject.org are filtered.
+
+ T-Mobile USA @TMobileHelp
+I don&#39;t have enough information to speculate further about the details. I CAN help you turn off webguard? ^CG
+
+ Arturo Filastò @hellais
+@TMobileHelp what leads TMobile to believe that a customer is interested in censorship? Is Web Guard activated on all prepaid accounts?
+
+ T-Mobile USA @TMobileHelp
+Must be because when your account was set up, we thought you wanted it. If you don&#39;t, please contact us: http://ow.ly/9JllQ ^CG
+&lt;/pre&gt;
+So T-Mobile is basically interfering into what should be taught by
+parents to their children. Since most of prepaid customers are
+under 18 they reserve the right to decide what is right and wrong
+for them, even bypassing their parents.&lt;br /&gt;
+If I were a parent I would be mad that T-Mobile US chooses for my
+what my child should watch and should&amp;nbsp;not.
+&lt;/p&gt;
+
+&lt;p&gt;
+And what about the sites that they don&#39;t block? Are those deamed
+for some reason more acceptable? Is FILL_ME_IN_WITH_UNBLOCKED_SCANADLOUS_SITE
+then right to be shown to my&amp;nbsp;children?
+&lt;/p&gt;
+
+
+   </content></entry></feed>

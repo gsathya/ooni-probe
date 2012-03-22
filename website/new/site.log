@@ -1,0 +1,42 @@
+[21/Mar/2012:16:48:03] ENGINE Bus STARTING
+[21/Mar/2012:16:48:03] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Mar/2012:16:48:03] ENGINE Serving on localhost:8080
+[21/Mar/2012:16:48:03] ENGINE Bus STARTED
+[21/Mar/2012:16:48:18] ENGINE Keyboard Interrupt: shutting down bus
+[21/Mar/2012:16:48:18] ENGINE Bus STOPPING
+[21/Mar/2012:16:48:19] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[21/Mar/2012:16:48:19] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Mar/2012:16:48:19] ENGINE Bus STOPPED
+[21/Mar/2012:16:48:19] ENGINE Bus EXITING
+[21/Mar/2012:16:48:19] ENGINE Bus EXITED
+[21/Mar/2012:16:48:19] ENGINE Waiting for child threads to terminate...
+[21/Mar/2012:16:48:19] ENGINE Waiting for thread CP Server Thread-8.
+[21/Mar/2012:16:49:47] ENGINE Bus STARTING
+[21/Mar/2012:16:49:47] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Mar/2012:16:49:47] ENGINE Serving on localhost:8080
+[21/Mar/2012:16:49:47] ENGINE Bus STARTED
+[21/Mar/2012:16:50:04] ENGINE Keyboard Interrupt: shutting down bus
+[21/Mar/2012:16:50:04] ENGINE Bus STOPPING
+[21/Mar/2012:16:50:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[21/Mar/2012:16:50:06] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Mar/2012:16:50:06] ENGINE Bus STOPPED
+[21/Mar/2012:16:50:06] ENGINE Bus EXITING
+[21/Mar/2012:16:50:06] ENGINE Bus EXITED
+[21/Mar/2012:16:50:06] ENGINE Waiting for child threads to terminate...
+[21/Mar/2012:16:50:06] ENGINE Waiting for thread CP Server Thread-9.
+[21/Mar/2012:16:51:58] ENGINE Bus STARTING
+[21/Mar/2012:16:51:58] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Mar/2012:16:51:58] ENGINE Serving on localhost:8080
+[21/Mar/2012:16:51:58] ENGINE Bus STARTED
+[21/Mar/2012:16:54:30] ENGINE Keyboard Interrupt: shutting down bus
+[21/Mar/2012:16:54:30] ENGINE Bus STOPPING
+[21/Mar/2012:16:54:30] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[21/Mar/2012:16:54:30] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Mar/2012:16:54:30] ENGINE Bus STOPPED
+[21/Mar/2012:16:54:30] ENGINE Bus EXITING
+[21/Mar/2012:16:54:30] ENGINE Bus EXITED
+[21/Mar/2012:16:54:30] ENGINE Waiting for child threads to terminate...
+[21/Mar/2012:16:57:50] ENGINE Bus STARTING
+[21/Mar/2012:16:57:50] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Mar/2012:16:57:50] ENGINE Serving on localhost:8080
+[21/Mar/2012:16:57:50] ENGINE Bus STARTED
