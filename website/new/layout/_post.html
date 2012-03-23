@@ -3,6 +3,18 @@
 {% block content_body %}
 
 <!-- BEGIN content-Body -->
+<div class="container">
+    {% filter typogrify %}
+
+    {% markdown %}
+
+    {% block article %}
+    {% endblock %}
+
+    {% endmarkdown %}
+
+    {% endfilter %}
+</div>
 
 <!-- END content-Body -->
 
