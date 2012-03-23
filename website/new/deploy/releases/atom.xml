@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>OONI releases</title><link href="http://www.ooni.nu/releases/atom.xml" rel="self"/><link href="http://www.ooni.nu"/><updated>2012-03-22T23:35:42Z</updated><id>http://www.ooni.nu</id><entry><title>T-Mobile USA Web Guard</title><author><name>Arturo Filasto&#39;</name></author><link href="http://www.ooni.nu/releases/2012/T-Mobile_USA_WebGuard.html"/><updated>2012-03-21T02:00:00Z</updated><published>2012-03-21T02:00:00Z</published><id>http://www.ooni.nu/releases/2012/T-Mobile_USA_WebGuard.html</id><content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>OONI releases</title><link href="http://www.ooni.nu/releases/atom.xml" rel="self"/><link href="http://www.ooni.nu"/><updated>2012-03-23T00:46:31Z</updated><id>http://www.ooni.nu</id><entry><title>T-Mobile USA Web Guard</title><author><name>Arturo Filasto&#39;</name></author><link href="http://www.ooni.nu/releases/2012/T-Mobile_USA_WebGuard.html"/><updated>2012-03-21T02:00:00Z</updated><published>2012-03-21T02:00:00Z</published><id>http://www.ooni.nu/releases/2012/T-Mobile_USA_WebGuard.html</id><content type="html">
        
 
 &lt;p&gt;T-Mobile USA offers a &quot;feature&quot; to restrict access to certain
