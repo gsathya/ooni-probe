@@ -150,6 +150,7 @@
   }
   .row {
     margin-left: 0;
+    margin-bottom: 10px;
   }
   .row > [class*="span"],
   .row-fluid > [class*="span"] {
