@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>OONI releases</title><link href="http://www.ooni.nu/releases/atom.xml" rel="self"/><link href="http://www.ooni.nu"/><updated>2012-03-22T19:19:48Z</updated><id>http://www.ooni.nu</id><entry><title>T-Mobile USA Web Guard</title><author><name>Arturo Filasto&#39;</name></author><link href="http://www.ooni.nu/releases/2012/T-Mobile_USA_WebGuard.html"/><updated>2012-03-21T02:00:00Z</updated><published>2012-03-21T02:00:00Z</published><id>http://www.ooni.nu/releases/2012/T-Mobile_USA_WebGuard.html</id><content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>OONI releases</title><link href="http://www.ooni.nu/releases/atom.xml" rel="self"/><link href="http://www.ooni.nu"/><updated>2012-03-22T22:24:50Z</updated><id>http://www.ooni.nu</id><entry><title>T-Mobile USA Web Guard</title><author><name>Arturo Filasto&#39;</name></author><link href="http://www.ooni.nu/releases/2012/T-Mobile_USA_WebGuard.html"/><updated>2012-03-21T02:00:00Z</updated><published>2012-03-21T02:00:00Z</published><id>http://www.ooni.nu/releases/2012/T-Mobile_USA_WebGuard.html</id><content type="html">
        
 
 &lt;p&gt;T-Mobile USA offers a &quot;feature&quot; to restrict access to certain
@@ -39,71 +39,570 @@ While most of the censored sites are legitimately categorized, there are certain
 ones that do not fall under the categories of the block.
 Here is a list of sites that we found to be censored, but that we don&#39;t believe
 belong to any of the following categories Alcohol, Mature Content, Violence,
-Drugs, Pornography, Weapons, Gambling, Suicide, Guns, Hate, Tobacco, Ammunition.
-&lt;ul&gt;
-&lt;li&gt;
-http://pitsirikos.net/
-Satirical site of a famous greek blogger&lt;br /&gt;
-&lt;/li&gt;
-&lt;li&gt;
-http://whatreallyhappened.com/&lt;br /&gt;
-Conspiracy theory website dealing with&amp;nbsp;9/11
-&lt;/li&gt;
-&lt;li&gt;http://www.chartsinfrance.net/&lt;br/&gt;
-French pop music hit&amp;nbsp;list
-&lt;/li&gt;
-&lt;li&gt;
-http://web.archive.org/
-The internet archive. The library of the&amp;nbsp;internet.&lt;/li&gt;
-&lt;li&gt;http://www.programme.tv/&lt;br/&gt;French broadcast TV&amp;nbsp;guide&lt;/li&gt;
-&lt;li&gt;http://www.cosmopolitan.com/&lt;br /&gt;Cosmopolitan is an international magazine for&amp;nbsp;women.&lt;/li&gt;
-&lt;li&gt;zone-h.org&lt;br /&gt;Zone-H is an archive of defaced&amp;nbsp;websites&lt;/li&gt;
-&lt;li&gt;
-http://torproject.org&lt;br /&gt;
-The Tor Project is dedicated to proving anonymous secure communication. The web
-site contains information on this piece of software and how to use it. It&#39;s curious
-to note that although http://torproject.org/ may be blocked httpS://torproject.org is
-still accessible and that is the link found on all&amp;nbsp;sites.
-&lt;/li&gt;
-&lt;li&gt;http://www.sportscn.com/&lt;br /&gt;Chinese sports news&amp;nbsp;website&lt;/li&gt;
-&lt;li&gt;217.175.53.72&lt;br /&gt;Italian censorship site being blocked by US&amp;nbsp;censorship&lt;/li&gt;
-&lt;/li&gt;
+Drugs, Pornography, Weapons, Gambling, Suicide, Guns, Hate, Tobacco,&amp;nbsp;Ammunition.
+&lt;/p&gt;
 
-&lt;li&gt;http://logicalmedia.com/
-&lt;/li&gt;
-&lt;li&gt;http://www.newgrounds.com/
-&lt;/li&gt;
-&lt;li&gt;hackforums.net&lt;br /&gt;
-Is a hacking&amp;nbsp;forum.
-&lt;/li&gt;
-&lt;li&gt;http://www.nulledscripts.it/
-&lt;/li&gt;
-&lt;li&gt;http://nullrefer.com/
-&lt;/li&gt;
-&lt;li&gt;http://wwwwwwwwwww.net/
-&lt;/li&gt;
-&lt;li&gt;anonym.to
-&lt;/li&gt;
-&lt;li&gt;http://www.nulled.cc/
-&lt;/li&gt;
-&lt;li&gt;http://www.ir-tci.org/
-&lt;/li&gt;
-&lt;li&gt;http://matomeru2ch.com/
-&lt;/li&gt;
-&lt;li&gt;http://wiki-live.com/
-&lt;/li&gt;
-&lt;li&gt;http://www.wjunction.com/
-&lt;/li&gt;
+&lt;!-- END ROW --&gt;
 
-&lt;/ul&gt;
-These other sites are sort of border line. Under some loose interpretation
-of the above categories may fit into the censorship.
-&lt;ul&gt;
-&lt;li&gt;http://www.victoriassecret.com/
-&lt;/li&gt;
-&lt;/ul&gt;
-When I asked T-Mobile US about the matter this is what came out with the
-following:
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;!-- BEGIN ROW --&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot41&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/torproject.org.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot41&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/torproject.org.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://torproject.org&lt;/h5&gt;
+    &lt;p&gt;The Tor Project is dedicated to proving anonymous secure&amp;nbsp;communication&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot38&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/italian-censorship.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot38&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/italian-censorship.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://217.175.53.72/&lt;/h5&gt;
+    &lt;p&gt;This is one of the most interestingly blocked website. Italy practices DNS based censorship for website that are related to
+  online gambling. This is the block page is displayed when the IP address in the DNS response is spoofed. This is meta&amp;nbsp;censorship! &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot37&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/web.archive.org.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot37&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/web.archive.org.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://web.archive.org/&lt;/h5&gt;
+    &lt;p&gt;The internet archive Way Back Machine. The Library of the&amp;nbsp;Internet.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;!-- BEGIN ROW --&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot0&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/newgrounds.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot0&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/newgrounds.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://newgrounds.com&lt;/h5&gt;
+    &lt;p&gt;Newgrounds is an American entertainment and social media website. &lt;a href=&quot;https://en.wikipedia.org/wiki/Newgrounds&quot;&gt;Wikipedia&amp;nbsp;entry&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot1&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/wjunction.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot1&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/wjunction.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://wjunction.com/&lt;/h5&gt;
+    &lt;p&gt;Webmaster&amp;nbsp;Hangout&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot2&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/logicalmedia.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot2&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/logicalmedia.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://logicalmedia.com/&lt;/h5&gt;
+    &lt;p&gt;Logical Media is an Affiliate&amp;nbsp;Network.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END ROW --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;!-- BEGIN ROW --&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot3&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/cosmopolitan.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot3&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/cosmopolitan.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://cosmopolitan.com/&lt;/h5&gt;
+    &lt;p&gt;Cosmopolitan is an international magazine for women. &lt;a href=&quot;https://en.wikipedia.org/wiki/Cosmopolitan_(magazine)&quot;&gt;Wikipedia&amp;nbsp;Article&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot5&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/nullrefer.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot5&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/nullrefer.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://nullrefer.com/&lt;/h5&gt;
+    &lt;p&gt;Hide Refer hides the visitors HTTP refer from being seen by other&amp;nbsp;websites&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot6&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/sportscn.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot6&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/sportscn.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://sportscn.com/&lt;/h5&gt;
+    &lt;p&gt;Chinese sports news&amp;nbsp;website&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END ROW --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;!-- BEGIN ROW --&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot7&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/programme.tv.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot7&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/programme.tv.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://programme.tv/&lt;/h5&gt;
+    &lt;p&gt;French TV guide&amp;nbsp;website.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot8&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/nulled.cc.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot8&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/nulled.cc.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://nulled.cc/&lt;/h5&gt;
+    &lt;p&gt;Russian programming&amp;nbsp;forum&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot9&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/ir-tci.org.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot9&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/ir-tci.org.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://ir-tci.org/&lt;/h5&gt;
+    &lt;p&gt;Iranian&amp;nbsp;Forum&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END ROW --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;!-- BEGIN ROW --&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot12&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/zonebourse.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot12&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/zonebourse.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://zonebourse.com/&lt;/h5&gt;
+    &lt;p&gt;French economics and financial news&amp;nbsp;site&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot14&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/hackbase.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot14&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/hackbase.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://hackbase.com/&lt;/h5&gt;
+    &lt;p&gt;Chinese hacking&amp;nbsp;website&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot15&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/whatreallyhappened.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot15&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/whatreallyhappened.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://whatreallyhappened.com/&lt;/h5&gt;
+    &lt;p&gt;9/11 conspiracy theory news&amp;nbsp;site&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END ROW --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;!-- BEGIN ROW --&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot17&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/p.tl.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot17&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/p.tl.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://p.tl/&lt;/h5&gt;
+    &lt;p&gt;Japanese URL shortening&amp;nbsp;service&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END ROW --&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot20&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/10minutesaperdre.fr.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot20&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/10minutesaperdre.fr.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://10minutesaperdre.fr/&lt;/h5&gt;
+    &lt;p&gt;French funny news&amp;nbsp;website&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot21&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/statsie.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot21&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/statsie.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://statsie.com/&lt;/h5&gt;
+    &lt;p&gt;Website statistics collection&amp;nbsp;site&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END ROW --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;!-- BEGIN ROW --&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot22&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/bbcprofit.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot22&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/bbcprofit.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://bbcprofit.com/&lt;/h5&gt;
+    &lt;p&gt;Financial advice&amp;nbsp;website&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot23&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/el-annuaire.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot23&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/el-annuaire.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://el-annuaire.com/&lt;/h5&gt;
+    &lt;p&gt;French website&amp;nbsp;index&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot24&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/livesports.pl.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot24&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/livesports.pl.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://livesports.pl/&lt;/h5&gt;
+    &lt;p&gt;Polish sports news&amp;nbsp;website&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END ROW --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;!-- BEGIN ROW --&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot25&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/titan007.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot25&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/titan007.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://titan007.com/&lt;/h5&gt;
+    &lt;p&gt;Chinese sports news&amp;nbsp;website&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot27&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/girlpower.it.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot27&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/girlpower.it.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://girlpower.it/&lt;/h5&gt;
+    &lt;p&gt;Italian women advice&amp;nbsp;website&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot28&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/yusukebe.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot28&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/yusukebe.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://yusukebe.com/&lt;/h5&gt;
+    &lt;p&gt;Japanese&amp;nbsp;blog&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END ROW --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;!-- BEGIN ROW --&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot29&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/sougouwiki.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot29&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/sougouwiki.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://sougouwiki.com/&lt;/h5&gt;
+    &lt;p&gt;Japanese&amp;nbsp;wiki&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot30&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/wiki-live.com.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot30&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/wiki-live.com.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://wiki-live.com/&lt;/h5&gt;
+    &lt;p&gt;Online Article&amp;nbsp;directory&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot31&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/hltv.org.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot31&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/hltv.org.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://hltv.org/&lt;/h5&gt;
+    &lt;p&gt;Sports news&amp;nbsp;website&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END --&gt;
+
+&lt;!-- END ROW --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;!-- BEGIN ROW --&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot32&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/elu24.ee.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot32&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/elu24.ee.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://elu24.ee/&lt;/h5&gt;
+    &lt;p&gt;Estonian news&amp;nbsp;portal&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot33&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/pitsirikos.net.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot33&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/pitsirikos.net.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://pitsirikos.net/&lt;/h5&gt;
+    &lt;p&gt;Greek political&amp;nbsp;blog&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot34&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/kath.net.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot34&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/kath.net.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://kath.net/&lt;/h5&gt;
+    &lt;p&gt;Religious news&amp;nbsp;site&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END ROW --&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot35&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/hackforums.net.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot35&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/hackforums.net.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://hackforums.net/&lt;/h5&gt;
+    &lt;p&gt;Hacking&amp;nbsp;Forum&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;span3&quot;&gt;
+  &lt;div class=&quot;modal hide fade&quot; id=&quot;Screenshot40&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/echartsinfrance.net.png&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;thumbnail&quot;&gt;
+  &lt;a data-toggle=&quot;modal&quot; href=&quot;#Screenshot40&quot;&gt;
+    &lt;img src=&quot;/media/releases/2012/T-Mobile_USA_WebGuard/screenshot/chartsinfrance.net.png&quot; height=&quot;180px&quot; width=&quot;260px&quot;&gt;
+&lt;/a&gt;
+  &lt;div class=&quot;caption&quot;&gt;
+    &lt;h5&gt;http://www.chartsinfrance.net/&lt;/h5&gt;
+    &lt;p&gt;French pop music hit&amp;nbsp;list&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- END ROW --&gt;
+&lt;/div&gt;
+
+&lt;h5&gt;What can we learn from&amp;nbsp;this?&lt;/h5&gt;
+
+&lt;p&gt;
+That if you are a Chinese sports fan or a French interested in economics under 18 you will
+have a hard time going with T-Mobile in the US. There appears to be overall a tendency to blocking
+foreign sports news&amp;nbsp;websites.
+&lt;/p&gt;
+
+&lt;p&gt;When I asked T-Mobile US about the matter this is what came out with the&amp;nbsp;following:&lt;/p&gt;
 
 &lt;pre class=&quot;prettyprint linenums&quot;&gt;
  Arturo Filastò @hellais
@@ -142,6 +641,8 @@ I don&#39;t have enough information to speculate further about the details. I CA
  T-Mobile USA @TMobileHelp
 Must be because when your account was set up, we thought you wanted it. If you don&#39;t, please contact us: http://ow.ly/9JllQ ^CG
 &lt;/pre&gt;
+
+&lt;p&gt;
 So T-Mobile is basically interfering into what should be taught by
 parents to their children. Since most of prepaid customers are
 under 18 they reserve the right to decide what is right and wrong

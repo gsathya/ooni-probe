@@ -49,3 +49,7 @@
 [22/Mar/2012:19:20:03] ENGINE Bus EXITED
 [22/Mar/2012:19:20:03] ENGINE Waiting for child threads to terminate...
 [22/Mar/2012:19:20:03] ENGINE Waiting for thread CP Server Thread-14.
+[22/Mar/2012:19:20:37] ENGINE Bus STARTING
+[22/Mar/2012:19:20:37] ENGINE Started monitor thread '_TimeoutMonitor'.
+[22/Mar/2012:19:20:38] ENGINE Serving on localhost:8080
+[22/Mar/2012:19:20:38] ENGINE Bus STARTED
