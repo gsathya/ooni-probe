@@ -150,14 +150,13 @@
   }
   .row {
     margin-left: 0;
-    margin-bottom: 10px;
   }
   .row > [class*="span"],
   .row-fluid > [class*="span"] {
     float: none;
     display: block;
     width: auto;
-    margin: 0;
+    margin: 0 0 10px;
   }
   .thumbnails [class*="span"] {
     width: auto;
