@@ -93,7 +93,7 @@ Code Structure
     to write your own test based on the OONI paradigm.
 
 - tests/
-    Contains all the "offical" OONI tests that are shipped.
+    Contains all the "official" OONI tests that are shipped.
 
 - utils.py
     Helper functions that don't fit into any place, but are not big enough to
@@ -118,7 +118,7 @@ Indentation
         set expandtab
 
 
-    Continuation lines should be wrapper like this:
+    Continuation lines should be wrapped like this:
 
         foo = long_function_name(var_one, var_two,
                                  var_three, var_four)
@@ -131,12 +131,12 @@ Indentation
             print(var_one)
 
 
-    They should NOT be wrapper like this:
+    They should NOT be wrapped like this:
 
         foo = long_function_name(var_one, var_two,
                 var_three, var_four)
 
-    and NOT like this:
+    NOR like this:
 
         # See how it creates confusion with what is inside the function?
         def long_function_name(var_one,
@@ -170,10 +170,10 @@ Method definitions inside of class are separated by a single blank line.
 Encoding
 ........
 
-Always use UTF-8 encoding. This can be specified by add the encoding cookie
+Always use UTF-8 encoding. This can be specified by adding the encoding cookie
 to the beginning of your python files:
 
-    # -*- coding: UTF-8
+    # -*- coding: UTF-8 -*-
 
 All identifiers should be ASCII-only. All doc strings and comments should also
 only be in ASCII. Non ASCII characters are allowed when they are related to
@@ -205,11 +205,11 @@ Comments
 ........
 
 Comments should always be up to date with the code. Don't have
-comments that contraddict with the code.
+comments that contradict with the code.
 
 Comments should always be written in English.
 
-Blocks comments are indented to the same level of the code that
+Block comments are indented to the same level of the code that
 they refer to. They start with # and are followed by a single space.
 
 Use inline comments sparingly. # Gotcha?

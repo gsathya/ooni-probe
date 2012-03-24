@@ -7,7 +7,7 @@
     This contains all the code related to Nodes
     both network and code execution.
 
-    :copyright: (c) 2012 by Arturo Filastò.
+    :copyright: (c) 2012 by Arturo Filastò, Isis Lovecruft.
     :license: see LICENSE for more details.
 
 """
@@ -93,6 +93,7 @@ class CodeExecNode(Node):
 
 class PlanetLab(Node, CodeExecNode):
     def __init__(self, address, auth_creds, ooni):
+        self.node = Node(address, 22)
         self.auth_creds = auth_creds
 
         self.config = ooni.config
@@ -130,8 +131,10 @@ class PlanetLab(Node, CodeExecNode):
             print 'Adding nodes %s' % node['hostname']
 
     def _auth_login(slicename, machinename):
-        """Attempt to authenticate to the given PL node, slicename and
-        machinename, using any of the private keys in ~/.ssh/ """
+        """
+        Attempt to authenticate to the given PL node, slicename and
+        machinename, using any of the private keys in ~/.ssh/
+        """
 
         agent = paramiko.Agent()
         agent_keys = agent.get_keys()
@@ -147,27 +150,57 @@ class PlanetLab(Node, CodeExecNode):
             except paramiko.SSHException:
                 print 'Public key authentication to PlanetLab node %s failed.' % machinename,
 
-    def _get_command:
-        pass
+    def _ssh_to_node(slicename, machinename, sshkeypasswd):
+        """
+        Attempt to make an SSH2 connection to added PL nodes.
+        """
+        
+        self.hosts = []
+        self.connections = []
 
-    def ssh_and_run_(slicename, machinename, command):
-        """Attempt to make a standard OpenSSH client to PL node, and run
-        commands from a .conf file."""
+        if slicename, machinename, sshkeypasswd:
+            Node(machinename, 22)
+            for node in self.node:
+                self.hosts.append([slicename, machinename, sshkeypasswd])
+        
+        for host in self.hosts:
+            client = paramiko.SSHClient()
+            if (self.config.main.auto_add_new_hosts == 1):
+                client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+            client.load_system_host_keys()
+            client.connect(host[1], username=host[0], password=host[2])
+            self.connections.append(client)
 
-        ## needs a way to specify 'ssh -l <slicename> <machinename>'
-        ## with public key authentication.
+        return (self.hosts, self.connections)
 
-        command = PlanetLab.get_command()
+    def _ssh_and_run_(slicename, machinename, sshkeypasswd, command):
+        """
+        Attempt to make an SSH2 connection to PL nodes, and run
+        commands.
+        """
+        
+        PlanetLab._ssh_to_node(slicename, machinename, sshkeypasswd)
 
+        if command:
+            for host, conn in zip(self.hosts, self.connections):
+                stdin, stdout, stderr = conn.exec_command(command)
+                stdin.close()
+                for line in stdout.read().splitlines():
+                    print 'host: %s: %s' % (host[0], line)
+
+        for conn in self.connections:
+            conn.close()
+
+    def send_files_to_node(slicename, machinename, sshkeypasswd, 
+                           remotefile, localfile):
+        """Attempt to stfp files to the PL node."""
+        
+        PlanetLab._ssh_to_node(slicename, machinename, sshkeypasswd)
+        
         client = paramiko.SSHClient()
-        client.load_system_host_keys()
-        client.connect(machinename)
-
-        stdin, stdout, stderr = client.exec_command(command)
-
-    def send_files_to_node(directory, files):
-        """Attempt to rsync a tree to the PL node."""
-        pass
+        sftp = client.open_sftp()
+        sftp.get(localfile, remotefile)
+        sftp.close()
 
     def add_unit:
         pass
